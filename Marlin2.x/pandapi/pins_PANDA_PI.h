@@ -44,28 +44,28 @@
 //
 #define X_STEP_PIN         7 
 #define X_DIR_PIN          2 
-#define X_ENABLE_PIN       0 
+// #define X_ENABLE_PIN       0 
 
 #define Y_STEP_PIN         12 
 #define Y_DIR_PIN          5 
-#define Y_ENABLE_PIN       0 
+// #define Y_ENABLE_PIN       0 
 
 #define Z_STEP_PIN         14 
 #define Z_DIR_PIN          13 
-#define Z_ENABLE_PIN       0 
+// #define Z_ENABLE_PIN       0 
 
 
-#define E0_STEP_PIN        0 
-#define E0_DIR_PIN         0 
-#define E0_ENABLE_PIN      0 
+// #define E0_STEP_PIN        0 
+// #define E0_DIR_PIN         0 
+// #define E0_ENABLE_PIN      0 
 
-#define E1_STEP_PIN        0
-#define E1_DIR_PIN         0
-#define E1_ENABLE_PIN      0
+// #define E1_STEP_PIN        0
+// #define E1_DIR_PIN         0
+// #define E1_ENABLE_PIN      0
 
-#define E2_STEP_PIN        0
-#define E2_DIR_PIN         21
-#define E2_ENABLE_PIN      0
+// #define E2_STEP_PIN        0
+// #define E2_DIR_PIN         21
+// #define E2_ENABLE_PIN      0
 /*
 #define Z2_STEP_PIN        31
 #define Z2_DIR_PIN         21
@@ -138,10 +138,13 @@
 #define HEATER_1_PIN     28
 #define HEATER_2_PIN     29
 // #define HEATER_BED_PIN   0
-// #define TEMP_0_PIN       0
+#define TEMP_0_PIN       23
 // #define TEMP_1_PIN       0
 // #define TEMP_BED_PIN     0
 // #define TEMP_BOARD_PIN   0
+
+#define MAX6675_SS_PIN		22
+#define MAX6675_SCK_PIN		30
 
 // #define FAN_PIN         0
 // #define FAN1_PIN         0
