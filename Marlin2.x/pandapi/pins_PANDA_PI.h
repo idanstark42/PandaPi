@@ -44,20 +44,20 @@
 //
 #define X_STEP_PIN         7 
 #define X_DIR_PIN          2 
-// #define X_ENABLE_PIN       0 
+#define X_ENABLE_PIN       0 
 
 #define Y_STEP_PIN         12 
 #define Y_DIR_PIN          5 
-// #define Y_ENABLE_PIN       0 
+#define Y_ENABLE_PIN       0 
 
 #define Z_STEP_PIN         14 
 #define Z_DIR_PIN          13 
-// #define Z_ENABLE_PIN       0 
+#define Z_ENABLE_PIN       0 
 
 
-// #define E0_STEP_PIN        0 
-// #define E0_DIR_PIN         0 
-// #define E0_ENABLE_PIN      0 
+#define E0_STEP_PIN        0 
+#define E0_DIR_PIN         0 
+#define E0_ENABLE_PIN      0 
 
 // #define E1_STEP_PIN        0
 // #define E1_DIR_PIN         0
@@ -130,8 +130,8 @@
 
 // heat connector index
 //#define HOTBED_CODE       0  
-// #define HOTEND_0_CODE     1  
-// #define HOTEND_1_CODE     2  
+ #define HOTEND_0_CODE     1  
+ #define HOTEND_1_CODE     2  
 
 
 #define HEATER_0_PIN     27
