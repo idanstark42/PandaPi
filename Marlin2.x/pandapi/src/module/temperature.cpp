@@ -1059,7 +1059,8 @@ void Temperature::manage_heater() {
 	  target_temperature_bed_old=temp_bed.target;
 	  setTargetBed(temp_bed.target);
   }
-#endif  
+#endif
+#if HAS_FAN
   //setTargetFan
   if(fanSpeeds_old[0]!=fan_speed[0])
   {
@@ -1075,6 +1076,7 @@ void Temperature::manage_heater() {
 	  set_fan_speed(2,(!fanSpeeds_old[2])*255);
 	  
   }
+#endif
 
 //return;
 //////////////////
