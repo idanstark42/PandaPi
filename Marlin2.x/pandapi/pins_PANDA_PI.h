@@ -146,12 +146,25 @@
 #define MAX6675_SS_PIN		22
 #define MAX6675_SCK_PIN		30
 
+
+// #if ENABLED(MAX31856_PANDAPI)
+// #define HEATER_0_PIN     30
+// #else
+// #define HEATER_0_PIN     255
+// #endif
+// #define HEATER_1_PIN     255
+// #define HEATER_BED_PIN   255
+// #define TEMP_0_PIN       255
+// #define TEMP_1_PIN       255
+// #define TEMP_BED_PIN     255
+// #define TEMP_BOARD_PIN   255
+
 // #define FAN_PIN         0
 // #define FAN1_PIN         0
 // #define FAN2_PIN         0
 // #define FAN3_PIN         0
 
-//#define CASE_LIGHT_PIN 255
+#define CASE_LIGHT_PIN 255
 
 
 //////////////////////////
