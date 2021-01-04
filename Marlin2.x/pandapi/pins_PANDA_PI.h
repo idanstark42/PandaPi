@@ -143,9 +143,9 @@
 // #define TEMP_BED_PIN     0
 // #define TEMP_BOARD_PIN   0
 
-#define MAX6675_SS_PIN		22
+#define MOSI				22
 #define MAX6675_SCK_PIN		30
-
+#define MAX6675_DO_PIN		23
 
 // #if ENABLED(MAX31856_PANDAPI)
 // #define HEATER_0_PIN     30
