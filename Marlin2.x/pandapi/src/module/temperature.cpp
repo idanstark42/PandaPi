@@ -56,7 +56,7 @@
   #endif
   #ifndef MAX31865_MISO_PIN
     #define MAX31865_MISO_PIN   MAX6675_DO_PIN  //            42
-  #endifhttps://en.wikipedia.org/wiki/Serial_Peripheral_Interface#Intel_Enhanced_Serial_Peripheral_Interface_Bus
+  #endif
   #ifndef MAX31865_SCK_PIN
     #define MAX31865_SCK_PIN    MAX6675_SCK_PIN //            40
   #endif
