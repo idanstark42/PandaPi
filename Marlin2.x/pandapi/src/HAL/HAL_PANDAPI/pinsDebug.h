@@ -149,12 +149,9 @@ static bool pwm_status(uint8_t pin) {
       PWM_CASE(5, B);
       PWM_CASE(5, C);
     #endif
-
-    case NOT_ON_TIMER:
-    default:
-      return false;
   }
   SERIAL_ECHO_SP(2);
+  return false;
 } // pwm_status
 
 
