@@ -2280,6 +2280,54 @@ void Temperature::update_raw_temperatures() {
   raw_temps_ready = true;
 }
 
+
+///PANDAPI
+char parse_string(char *src,char *start,char *end,char *out,int *e_pos)
+{
+  int i=0;
+  int s_index=-1;
+  int e_index=-1;
+  out[0]=0;
+  *e_pos=0;
+  for(i=0;i<strlen(src);i++)
+  {
+    if(strncmp(src+i,start,strlen(start))==0)
+    {
+      s_index=i+strlen(start);
+      break;
+    }
+  }
+  if(s_index<0)
+    return 1;
+  ///////////////////
+  if(strlen(end)==0)
+  {
+    strcpy(out,src+s_index);
+    *e_pos=strlen(src);
+    return 0;
+
+  }
+  for(i=s_index;i<strlen(src);i++)
+  {
+    if(strncmp(src+i,end,strlen(end))==0)
+    {
+      e_index=i;
+      break;
+    }
+  } 
+  if(e_index<0)
+  {
+    strcpy(out,src+s_index);
+    *e_pos=strlen(src);
+    return 0;
+  }
+  memcpy(out,src+s_index,e_index-s_index);
+  out[e_index-s_index]=0;
+  *e_pos=e_index;
+  return 2;
+}
+
+
 void Temperature::readings_ready() {
 
   // Update the raw values if they've been read. Else we could be updating them during reading.
